@@ -1,0 +1,25 @@
+﻿@model IEnumerable<MVCReport.Models.ReportNode>
+
+@foreach (var rootNode in Model)
+{
+    var hasChildren = rootNode.Children.Count > 0;
+    var selectableClass = hasChildren ? "selectable" : "";
+    var bgClass = rootNode.GroupingName;
+
+
+    <div class="rowHeader bold @selectableClass @bgClass" onclick="toggleContent(this)">
+        <div class="label">
+            <span class="expandImg"></span>
+            @rootNode.Current.Label
+        </div>
+        <div class="value">@rootNode.Current.Value.ToString("#,###.##")</div>
+    </div>
+
+    if (rootNode.Children.Count > 0)
+    {
+        <div class="content">
+            @Html.Partial("_ReportNode", rootNode.Children)
+        </div>
+    }
+
+}

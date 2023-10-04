@@ -1,0 +1,142 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.reportData {
+    margin-top: 30px;
+    display: block;
+    position: relative;
+}
+
+    .reportData .rowHeader,
+    .reportData .header,
+    .reportData .footer {
+        display: table;
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        opacity: 1;
+        transition: opacity 250ms ease-in-out;
+    }
+
+    .reportData .header,
+    .reportData .footer {
+        font-weight: bold;
+        background-color: darkcyan;
+        color: #ffffff;
+    }
+
+    .reportData .rowHeader.expand {
+        opacity: 0.8;
+    }
+
+    .reportData .rowHeader.selectable {
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+        .reportData .rowHeader.selectable:hover {
+            opacity: 0.7;
+        }
+
+        .reportData .rowHeader.selectable .expandImg {
+            background: url(../Images/plus.png) center no-repeat;
+            height: 8px;
+            width: 8px;
+            background-size: contain;
+            position: relative;
+            float: left;
+            top: 8px;
+            margin-right: 5px;
+            display: block;
+        }
+
+        .reportData .rowHeader.selectable.expand .expandImg {
+            background-image: url(../Images/minus.png);
+        }
+
+    .reportData .rowHeader > div,
+    .reportData .header > div,
+    .reportData .footer > div {
+        width: 50%;
+        display: table-cell;
+        border-width: 1px 0px 1px 1px;
+        border-style: solid;
+        border-color: #c9c9c9c9;
+        padding: 0px 40px;
+    }
+
+        .reportData .rowHeader > div:last-child {
+            border-width: 1px 1px 1px 1px;
+        }
+
+    .reportData .header > div,
+    .reportData .footer > div {
+        padding: 0px 10px;
+    }
+
+
+    .reportData .rowHeader .label,
+    .reportData .header .label,
+    .reportData .footer .label {
+        text-align: left;
+        position: relative;
+    }
+
+    .reportData .rowHeader .value,
+    .reportData .header .value,
+    .reportData .footer .value {
+        text-align: right;
+        position: relative;
+    }
+
+    /* BGs based on GroupingName */
+    .reportData .rowHeader.Instrument {
+        background-color: cadetblue;
+    }
+
+        .reportData .rowHeader.Instrument > div {
+            padding: 5px 15px;
+        }
+
+    .reportData .rowHeader.BusinessUnit {
+        background-color: #efefef;
+    }
+
+        .reportData .rowHeader.BusinessUnit > div {
+            padding: 5px 30px;
+        }
+
+    .reportData .content {
+        display: block;
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 250ms ease-in-out;
+    }
+
+
+        .reportData .content.expand {
+            max-height: 1000px;
+        }

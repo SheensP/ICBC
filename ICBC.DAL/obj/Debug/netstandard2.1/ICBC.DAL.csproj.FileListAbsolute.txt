@@ -1,0 +1,10 @@
+C:\Users\umesh\source\repos\ICBCReports\ICBC.DAL\bin\Debug\netstandard2.1\ICBC.DAL.deps.json
+C:\Users\umesh\source\repos\ICBCReports\ICBC.DAL\bin\Debug\netstandard2.1\ICBC.DAL.dll
+C:\Users\umesh\source\repos\ICBCReports\ICBC.DAL\bin\Debug\netstandard2.1\ICBC.DAL.pdb
+C:\Users\umesh\source\repos\ICBCReports\ICBC.DAL\obj\Debug\netstandard2.1\ICBC.DAL.csproj.AssemblyReference.cache
+C:\Users\umesh\source\repos\ICBCReports\ICBC.DAL\obj\Debug\netstandard2.1\ICBC.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umesh\source\repos\ICBCReports\ICBC.DAL\obj\Debug\netstandard2.1\ICBC.DAL.AssemblyInfoInputs.cache
+C:\Users\umesh\source\repos\ICBCReports\ICBC.DAL\obj\Debug\netstandard2.1\ICBC.DAL.AssemblyInfo.cs
+C:\Users\umesh\source\repos\ICBCReports\ICBC.DAL\obj\Debug\netstandard2.1\ICBC.DAL.csproj.CoreCompileInputs.cache
+C:\Users\umesh\source\repos\ICBCReports\ICBC.DAL\obj\Debug\netstandard2.1\ICBC.DAL.dll
+C:\Users\umesh\source\repos\ICBCReports\ICBC.DAL\obj\Debug\netstandard2.1\ICBC.DAL.pdb

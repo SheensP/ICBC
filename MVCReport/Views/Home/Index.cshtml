@@ -1,0 +1,41 @@
+﻿@model MVCReport.Models.TradeViewModel
+
+@{
+    ViewBag.Title = "Report";
+
+}
+
+<h2>Report</h2>
+
+@if (Model.ReportData.Count <= 0)
+{
+    @Html.ActionLink("Load Data", "LoadData", "Home", new { area = "" }, new { @class = "loadDataBtn" })
+}
+
+@if (Model.ReportData.Count > 0)
+{
+    <div class="reportData">
+        <div class="header">
+            <div class="label">Row Labels</div>
+            <div class="value">Sum of Reporting Amount</div>
+        </div>
+
+        @Html.Partial("_ReportNode", Model.ReportData)
+        <div class="footer">
+            <div class="label">Total</div>
+            <div class="value">@Model.GrandTotal.ToString("#,###.##")</div>
+        </div>
+
+    </div>
+}
+
+@section scripts{
+    <script>
+        function toggleContent(el) {
+            var contentEl = $(el).next(".content");
+
+            $(el).toggleClass('expand');
+            $(contentEl).toggleClass('expand')
+        };
+    </script>
+}
